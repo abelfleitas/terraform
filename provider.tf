@@ -5,10 +5,7 @@ terraform {
     }
   }
 
-  backend "s3" {
-    backend = ""
-    key = "terraform.tfstate"
-  }
+  backend "s3" {}
 }
 
 provider "aws" {
