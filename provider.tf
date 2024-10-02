@@ -6,7 +6,8 @@ terraform {
   }
 
   backend "s3" {
-    
+    bucket = "infrastructure-code-x777"
+    key = "terraform.tfstate"
   }
 }
 
