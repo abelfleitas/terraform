@@ -26,5 +26,4 @@ jobs:
       run: terraform init \
             -backend-config="bucket=${{ secrets.S3BUCKET }}" \
             -backend-config="key=terraform.tfstate" \
-            -backend-config="region=us-east-1" \
-            -backend-config="profile=default"
+            -backend-config="region=us-east-1"
